@@ -377,3 +377,71 @@
     var_dump($cliente);
     echo "</pre>";
 ?>
+
+<?php
+    echo "<br> ------------------------------ "
+?>
+
+<?php
+    $miVariable = "Hola";
+    if (isset($miVariable)){
+        echo "<br><br> La variable esta definida y tiene un valor";
+    } else {
+        echo "<br><br> La variable no esta definida o no tiene un valor";
+    }
+
+    $MiVariable = "";
+    if (empty($MiVariable)){
+        echo "<br><br> La variable esta vacia o no tiene esta definida";
+    } else {
+        echo "<br><br> La variable tiene un valor";
+    }
+?>
+
+<?php
+    echo "<br><br> ------------------------------ "
+?>
+
+<?php
+    $clientes = [];
+    $clientes2 = array();
+    $clientes3 = array('Pedro', 'Juan', 'Karen');
+    $cliente = [
+        'nombre' => 'Juan',
+        'saldo' => 200
+    ];
+
+    // Empty - Revisa si un arreglo esta vacio
+    echo "<br><br>";
+    var_dump(empty($clientes));
+
+    echo "<br><br>";
+    var_dump(empty($clientes2));
+
+    echo "<br><br>";
+    var_dump(empty($clientes3));
+
+    // Isset - Revisar si un arreglo esta creado o una propiedad esta definida
+    echo "<br><br>";
+    var_dump(isset($clientes4));
+
+    echo "<br><br>";
+    var_dump(isset($clientes3));
+
+    echo "<br><br>";
+    var_dump(isset($clientes2));
+
+    echo "<br><br>";
+    var_dump(isset($clientes));
+
+    // Isset - Permite revisar si una propiedad de un arreglo asociativo, existe!
+    echo "<br><br>";
+    var_dump(isset($clientes['nombre']));
+
+    echo "<br><br>";
+    var_dump(isset($clientes['codigo']));
+?>
+
+<?php
+    echo "<br><br> ------------------------------ "
+?>
