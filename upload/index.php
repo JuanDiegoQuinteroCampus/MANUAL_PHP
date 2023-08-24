@@ -67,7 +67,7 @@
 
 <?php
     echo "<br><br> ------------------------------"
-?>
+?> 
 
 <?php
     //Numeros y Operadores
