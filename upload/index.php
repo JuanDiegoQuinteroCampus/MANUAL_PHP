@@ -15,6 +15,7 @@
     echo "<br><br> ------------------------------"
 ?>
 
+
 <?php
     // Declarar Una Variable Numerica
     $edad = 25;
